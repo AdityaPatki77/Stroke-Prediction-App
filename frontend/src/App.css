@@ -1,0 +1,165 @@
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align content to the top */
+  padding-top: 20px; /* Add some padding at the top */
+}
+
+/* App Container */
+.app-container {
+  width: 100%;
+  max-width: 600px; /* Limit the width for better readability */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px; /* Add margin for spacing */
+}
+
+/* Title Styling */
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form Container */
+.form-container {
+  width: 100%;
+}
+
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label Styling */
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Input & Select Styling */
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  color: #333;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Focus Effect */
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #4CAF50;
+  outline: none;
+  background-color: #fff;
+}
+
+/* Flex Layout for Row with Two Fields */
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.row .form-group {
+  width: 48%; /* Makes each field take up half the row width */
+}
+
+/* Remove arrows from number input (BMI) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Submit Button Styling */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Result Section */
+.result-container {
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.result-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.result-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.result-container span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.result-container p {
+  margin-top: 10px;
+  color: #666;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Close Button (X) */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #333;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #ff0000;
+}
